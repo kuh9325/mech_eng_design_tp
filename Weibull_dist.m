@@ -3,8 +3,8 @@
 a=4.439;
 b=1.483;
 X=wblrnd(a,b,1e4,1);
-hist(X,10);
-hist(X,50);
+hist(X,10)
+hist(X,50)
 x=0:0.1:20;
 f=wblpdf(x,a,b);
 plot(x,f);
