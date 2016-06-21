@@ -66,16 +66,16 @@ end
 
 Xi = zeros(1,4);
 Yi = zeros(1,4);
-fafr = zeros(1,4);
+
 for i=1:4
-    fafr(i) = Fa(i)/Fr(i);
-    if fafr(i) <= e(i)
-        Xi(i) = 1.0;
-        Yi(i) = 0.0;
+    fafr = Fa/Fr;
+    if fafr <= e
+        X = 1.0;
+        Y = 0.0;
     else
-        Xi(i) = 0.56;
-        Yi(i) = 0.84/fc(i)^0.24;
-    end
+        X = 0.56;
+        Y = 0.84/fc^0.24;
+end
 end
 
 end

@@ -1,6 +1,7 @@
 %% MATLAB code for computing the equivalent radial load on the bearing %%
+function eqload(Fa,Fr,C0_r)
 
-fc = Fa/Co_r;
+fc = Fa/C0_r;
 e = 0.505*fc^0.231;
 fafr = Fa/Fr;
 if fafr <= e
@@ -13,3 +14,4 @@ end
 
 % Dynamic equivalent radial load on the bearing %
 Pm = X*Fr + Y*Fa;
+disp(Pm);
