@@ -1,7 +1,7 @@
 %% initial setting %%
 % taxi before take off, take off, landing, taxi after landing 
 Fr = [996.924 906.999 558.834 339.975]; % radial load (N)
-t = [(20/40) (10/40) (10/40) (20/40)]; % time fraction
+t = [(20/60) (10/60) (10/60) (20/60)]; % time fraction
 n = [27.849 661.823 639.544 27.849]; % angular speed (RPM)
 Fa = [47.635 47.456 45.672 45.672]; % axial load (N)
 af = 1.5;
